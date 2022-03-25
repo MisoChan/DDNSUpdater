@@ -2,7 +2,7 @@ require 'fileutils'
 
 module TempWriter
     
-    @@temp_file_path = "./tmp/DDNSUpdater.tmp"
+    @@temp_file_path = "/tmp/DDNSUpdater.tmp"
 
 
     def init()

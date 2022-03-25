@@ -48,7 +48,7 @@ class DDNSUpdater
                 result = ipaddr_resolver.execute_read()
                 
                 if result
-                     google_ddns_updater.executeOutput()
+                     google_ddns_updater.execute_output()
                 end
 
                 write_log_title("Process End: #{ipaddr_resolver.get_config_key()} ")

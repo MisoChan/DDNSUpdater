@@ -4,7 +4,7 @@ require 'date'
 
 module LogWriter
 
-    @@log = Logger.new("./log/#{Date.today}.log")
+    @@log = Logger.new(STDOUT,"./log/#{Date.today}.log")
 
     def write_info_log(message)
         @@log.level=Logger::INFO
