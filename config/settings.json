@@ -1,0 +1,12 @@
+{
+    "General": {
+        "GLOBAL_IP_UPDATE_INTERVAL_SECONDS": 60
+    },
+    "GoogleDDNS" : [{
+        "DOMAIN": "www.hogepiyo.net",
+        "USER_NAME": "username",
+        "PASSWORD": "passneko"
+
+    }]
+
+}
