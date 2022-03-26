@@ -10,6 +10,7 @@ class IpAddressResolver < InputBase
     def execute_read
         old_ipaddr =  read_temporary_data()[:ip_addr]
         ip_addr = Resolv::DNS.new(:nameserver=>'ns1.google.com').getresources("o-o.myaddr.l.google.com", Resolv::DNS::Resource::IN::TXT)[0].strings[0]
+        @is_changed_ip = false
         write_info_log("Your global IP address is #{ip_addr}.")
 
 
